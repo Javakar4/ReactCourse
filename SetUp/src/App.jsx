@@ -7,6 +7,7 @@ import ButtonClick from "./Components/ButtonClick.jsx";
 import ListDemo from "./Components/ListDemo.jsx";
 import Loading from "./Components/Loading.jsx";
 import FormControl from "./Components/FormControl.jsx";
+import LearnState from "./Components/LearnState.jsx";
 
 function App() {
   const isDemo = false;
@@ -20,7 +21,8 @@ function App() {
       {/* {isLogin ? <ListDemo /> : <h1>Please log in to see the content</h1>} */}
       {/* {isLogin && <ListDemo />} */}
       {/* <Loading /> */}
-      <FormControl />
+      {/* <FormControl /> */}
+      <LearnState />
     </>
   );
 }
