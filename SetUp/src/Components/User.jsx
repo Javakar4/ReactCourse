@@ -68,3 +68,10 @@ export default User
 //         <p>Address: {user.address.city}</p>
 //     </div>
 // ))}
+
+
+
+// Task
+// 1. Fetch user data from API using Fetch and Axios
+// 2. Display ToDo list from API
+// 3. Handle loading and error states
