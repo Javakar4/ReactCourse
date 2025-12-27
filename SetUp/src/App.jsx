@@ -8,6 +8,8 @@ import ListDemo from "./Components/ListDemo.jsx";
 import Loading from "./Components/Loading.jsx";
 import FormControl from "./Components/FormControl.jsx";
 import LearnState from "./Components/LearnState.jsx";
+import Hooks from "./Components/Hooks.jsx";
+import User from "./Components/User.jsx";
 
 function App() {
   const isDemo = false;
@@ -22,7 +24,10 @@ function App() {
       {/* {isLogin && <ListDemo />} */}
       {/* <Loading /> */}
       {/* <FormControl /> */}
-      <LearnState />
+      {/* <LearnState /> */}
+
+      {/* <Hooks /> */}
+      <User />
     </>
   );
 }

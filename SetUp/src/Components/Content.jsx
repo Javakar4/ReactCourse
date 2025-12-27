@@ -1,7 +1,7 @@
 import React from 'react'
 import First from './First.jsx'
 
-function Content({name, age}) {
+function Content(props) {
   return (
     <>
       <style>
@@ -17,7 +17,7 @@ function Content({name, age}) {
         `
         }
       </style>
-      <div className='content'>Content</div>
+      <div className='content'>Content {props.name}</div>
       <First name={name} age={age} />
     </>
   )
