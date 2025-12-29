@@ -16,18 +16,17 @@ function App() {
   const isLogin = true;
   return (
     <>
-      {/* <Navbar />
+      <Navbar />
       {isDemo ? <Demo /> : <Home />}
-      <Footer /> */}
+      <Footer />
       {/* <ButtonClick /> */}
       {/* {isLogin ? <ListDemo /> : <h1>Please log in to see the content</h1>} */}
       {/* {isLogin && <ListDemo />} */}
       {/* <Loading /> */}
       {/* <FormControl /> */}
       {/* <LearnState /> */}
-
       {/* <Hooks /> */}
-      <User />
+      {/* <User /> */}
     </>
   );
 }

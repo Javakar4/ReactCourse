@@ -1,5 +1,7 @@
 import React, { useEffect } from 'react'
 import { useState } from 'react'
+import axios from 'axios'
+import useGetAPI from './useGetAPI'
 
 function User() {
     // Fetch  - User Data from API - In-Built
@@ -7,8 +9,8 @@ function User() {
 
     // Promise - Object representing the eventual completion or failure of an asynchronous operation
 
-    const [users, setUsers] = useState([])
-    const [error, setError] = useState(null)
+    // const [users, setUsers] = useState([])
+    // const [error, setError] = useState(null)
     // Syntax for Fetch
     // async and await
 
@@ -22,19 +24,45 @@ function User() {
     //         });
     // }, [])
 
-    useEffect(() => {
-        const fetchData = async () => {
-            try {
-                const res = await fetch("https://jsonplaceholder.typicode.com/users");
-                const data = await res.json();
-                setUsers(data);
-            } catch (err) {
-                setError(err);
-                console.log("Error fetching data:", err.message);
-            }
-        };
-        fetchData();
-    }, []);
+    // useEffect(() => {
+    //     const fetchData = async () => {
+    //         try {
+    //             const res = await fetch("https://jsonplaceholder.typicode.com/users");
+    //             const data = await res.json();
+    //             setUsers(data);
+    //         } catch (err) {
+    //             setError(err);
+    //             console.log("Error fetching data:", err.message);
+    //         }
+    //     };
+    //     fetchData();
+    // }, []);
+
+
+    // Axios Example:
+    // Types of Methods -> Get, Post, Put, Delete.
+    // useEffect(() => {
+    //     const ax = async () => {
+    //         try {
+    //             const res = await axios.get(
+    //                 "https://jsonplaceholder.typicode.com/users"
+    //             );
+    //             setUsers(res.data);     // <-- actual user data
+    //             console.log(res.data);
+    //         } catch (err) {
+    //             setError(err);
+    //             console.log("Error fetching data:", err.message);
+    //         }
+    //     };
+
+    //     ax();
+    // }, []);
+
+    // Custom Hook Implementation
+    const {users, error} = useGetAPI();
+
+
+
     return (
         <>
             {error ? (
