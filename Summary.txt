@@ -1,0 +1,15 @@
+====React====
+1. Features - Virtual DOM, JSX, Components
+2. SetUp
+3. Component Creation | Pages Creation
+4. Functional Component
+5. State and Props, Prop Drilling
+6. Controlled Components (Form Validation)
+7. Hooks (useState, useEffect, useMemo, useCallback, useRef, Custom Hooks)
+8. Context API - useContext (How to use Dynamic Hook)
+9. Fetch and Axios (HTTP methods [POST, GET, PUT, DELETE])
+10. Custom Hooks Creation (use-prefix must be use in the component name)
+11. React-Router [BrowserRouter, Routes, Route(path, element)], [Link, useNavigate]
+12. Tailwind SetUp.
+
+
