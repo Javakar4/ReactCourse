@@ -2,16 +2,14 @@ import React from 'react'
 import { useState, useEffect } from 'react';
 import axios from 'axios'
 
-function useGetAPI() {
-    const [users, setUsers] = useState([])
+function useGetAPI(url) {
+    const [data, setData] = useState([])
     const [error, setError] = useState(null)
     useEffect(() => {
         const ax = async () => {
             try {
-                const res = await axios.get(
-                    "https://jsonplaceholder.typicode.com/users"
-                );
-                setUsers(res.data);
+                const res = await axios.get(url);
+                setData(res.data);
                 console.log(res.data);
             } catch (err) {
                 setError(err);
@@ -21,7 +19,7 @@ function useGetAPI() {
         ax();
     }, []);
     return (
-        {users, error}
+        {data, error}
     )
 }
 
